@@ -1,0 +1,14 @@
+mosquitto:
+  host: 192.168.20.8
+  port: 8010
+  user: orater
+  pass: Orater@1999
+
+mqtt-handler-manager:
+  host: http://192.168.20.8:8082
+
+mqtt-handlers:
+  double-take:
+    topic: homeassistant/sensor/double-take/+/state
+    qos: 1
+    handler: double-take/detected
